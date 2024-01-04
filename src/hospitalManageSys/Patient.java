@@ -61,7 +61,7 @@ public class Patient {
                 String patient_gender =resultSet.getString("Gender");
                 String patientDoB =resultSet.getString("DoB");
                 String Symptoms = resultSet.getString("Symptoms");
-                System.out.printf(" %-12s %-20s %-10s %-12s %-10s");
+                System.out.printf(" %-12s %-20s %-10s %-12s %-10s\n", id,patient_name,patient_gender,patientDoB,Symptoms);
 
             }
         }catch (SQLException e){
